@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "107111584596",
+    "project_id": "musicx-4d00d",
+    "storage_bucket": "musicx-4d00d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107111584596:android:a4e76aa53a27609cd42ec1",
+        "android_client_info": {
+          "package_name": "dev.vaibhav.musicx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107111584596-pfdbf5v4it6hl4c5hpmjr1um4ddsp85p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.vaibhav.musicx",
+            "certificate_hash": "92bfbed392f8295a373e384497c12141e66eb8ea"
+          }
+        },
+        {
+          "client_id": "107111584596-aibu0g50uv1ab1esr3deb9rbp4ec2lgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTufYmi5wTG5UJUCMFJZ7PYlURzIJqspM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107111584596-aibu0g50uv1ab1esr3deb9rbp4ec2lgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

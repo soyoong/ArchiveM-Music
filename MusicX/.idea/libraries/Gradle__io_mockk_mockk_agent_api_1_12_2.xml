@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.mockk:mockk-agent-api:1.12.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-agent-api/1.12.2/cb503ff5296ae388b8df2642d6ea794100a44db0/mockk-agent-api-1.12.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-agent-api/1.12.2/f38c954105b3daa3be8627b85f9e68bdeaa08a6f/mockk-agent-api-1.12.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-agent-api/1.12.2/8e9393b32113456e3e449e4be570e815520eaa93/mockk-agent-api-1.12.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

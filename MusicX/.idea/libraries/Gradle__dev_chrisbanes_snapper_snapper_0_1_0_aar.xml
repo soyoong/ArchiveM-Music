@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.chrisbanes.snapper:snapper:0.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3c6facb5a44a3c025be1aea33e694a48/transformed/jetified-snapper-0.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2d6c17de77e61a892825fca7f1883977/transformed/jetified-snapper-0.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2d6c17de77e61a892825fca7f1883977/transformed/jetified-snapper-0.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2d6c17de77e61a892825fca7f1883977/transformed/jetified-snapper-0.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.chrisbanes.snapper/snapper/0.1.0/c621681a5443028ecce4ce4e7185ddddb06920b0/snapper-0.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.chrisbanes.snapper/snapper/0.1.0/ae167d532c22446c101f3f50d7c64e0aa516e91/snapper-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

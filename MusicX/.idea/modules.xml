@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MusicX.iml" filepath="$PROJECT_DIR$/.idea/MusicX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MusicX.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MusicX.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MusicX.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MusicX.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MusicX.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MusicX.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MusicX.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MusicX.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
