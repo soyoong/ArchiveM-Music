@@ -13,3 +13,14 @@ const val sArtworkUri = "content://media/external/audio/albumart"
 enum class MusicState {
     PLAYING, PAUSED, NONE
 }
+
+object BottomConstants {
+    const val ROUTE_HOME = "Home"
+    const val ROUTE_NOTIFICATION = "Notification"
+    const val ROUTE_FAVORITE = "Favorite"
+    const val ROUTE_SETTING = "Setting"
+    const val ROUTE_MAIN_SCREEN = "Main screen"
+    const val ROUTE_LOGIN = "Login"
+    const val ROUTE_SIGNUP = "Sign up"
+    const val ROUTE_FORGOT_PASSWORD = "Forgot password"
+}

@@ -3,7 +3,6 @@ buildscript {
     ext {
         compose_version = '1.0.5'
         compose_m3_version = "1.0.0-alpha02"
-        kotlin_version = '1.5.31'
         hilt_version = '2.38.1'
         exoplayer_version = '2.16.1'
         room_version = '2.4.0'
@@ -12,6 +11,14 @@ buildscript {
         retrofit_version = "2.9.0"
         turbine_version = "0.7.0"
         mockK_version = "1.12.2"
+        compose_version = '1.0.1'
+        lifecycleVersion = '2.3.1'
+        kotlinVersion = '1.5.21'
+        kotlin_version = '1.5.21'
+        ktlintVersion = '0.41.0'
+        coroutines = '1.5.0'
+        moshi_version = '1.12.0'
+        nav_version = "2.5.1"
     }
     repositories {
         google()
@@ -23,7 +30,6 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.google.gms:google-services:4.3.13'
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
-
 
 //         NOTE: Do not place your application dependencies here; they belong
 //         in the individual module build.gradle files

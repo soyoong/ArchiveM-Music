@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.accompanist:accompanist-pager:0.22.0-rc@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9bb4f45afa6cfdc35ecb55d1f85008ba/transformed/jetified-accompanist-pager-0.22.0-rc/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b76442ac8e716aed3473f928ff19d17b/transformed/jetified-accompanist-pager-0.22.0-rc/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b76442ac8e716aed3473f928ff19d17b/transformed/jetified-accompanist-pager-0.22.0-rc/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b76442ac8e716aed3473f928ff19d17b/transformed/jetified-accompanist-pager-0.22.0-rc/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bae5de2fa57c6e01f6e1f092983e1df3/transformed/jetified-accompanist-pager-0.22.0-rc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bae5de2fa57c6e01f6e1f092983e1df3/transformed/jetified-accompanist-pager-0.22.0-rc/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bae5de2fa57c6e01f6e1f092983e1df3/transformed/jetified-accompanist-pager-0.22.0-rc/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.accompanist/accompanist-pager/0.22.0-rc/c4f50338a5e756ad9e239611290f72d5a496a695/accompanist-pager-0.22.0-rc-javadoc.jar!/" />

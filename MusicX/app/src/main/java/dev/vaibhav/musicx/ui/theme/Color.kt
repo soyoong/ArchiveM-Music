@@ -31,7 +31,7 @@ val md_theme_light_inversePrimary = Color(0xFF9fcaff)
 val md_theme_light_shadow = Color(0xFF000000)
 
 val md_theme_dark_primary = Color(0xFF9fcaff)
-val md_theme_dark_onPrimary = Color(0xFF00325b)
+val md_theme_dark_onPrimary = Color(0xFF0E0B1F)
 val md_theme_dark_primaryContainer = Color(0xFF004880)
 val md_theme_dark_onPrimaryContainer = Color(0xFFd1e4ff)
 val md_theme_dark_secondary = Color(0xFFbbc7db)
@@ -60,3 +60,8 @@ val md_theme_dark_shadow = Color(0xFF000000)
 
 val seed = Color(0xFF0061a7)
 val error = Color(0xFFba1b1b)
+
+val Purple200 = Color(0xFFBB86FC)
+val Purple500 = Color(0xFF6200EE)
+val Purple700 = Color(0xFF3700B3)
+val Teal200 = Color(0xFF3D3D3D)

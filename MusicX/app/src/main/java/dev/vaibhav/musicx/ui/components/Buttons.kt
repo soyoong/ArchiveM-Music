@@ -4,9 +4,9 @@ import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -16,14 +16,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import dev.vaibhav.musicx.R
-import dev.vaibhav.musicx.data.models.local.Music
+import dev.vaibhav.musicx.data.models.Music
 import dev.vaibhav.musicx.ui.theme.MusicXTheme
 import dev.vaibhav.musicx.ui.utils.PAUSE_MUSIC_CD
 import dev.vaibhav.musicx.ui.utils.PLAY_MUSIC_CD
 import dev.vaibhav.musicx.ui.utils.getPlayPauseIcon
 
 @Composable
-fun RoundImageButton(
+fun PlayMusicImageButton(
     image: Int,
     iconTint: Color,
     iconRelativeSize: Float,
@@ -60,9 +60,9 @@ fun PlayPauseButton(
     iconRelativeSize: Float = 0.4f,
     onPlayPauseButtonPressed: (Music) -> Unit
 ) {
-    RoundImageButton(
+    PlayMusicImageButton(
         image = getPlayPauseIcon(isPlaying),
-        iconTint = MaterialTheme.colorScheme.tertiary,
+        iconTint = MaterialTheme.colors.surface,
         iconRelativeSize = iconRelativeSize,
         backgroundColor = Color.Transparent,
         contentDescription = if (isPlaying) PAUSE_MUSIC_CD else PLAY_MUSIC_CD,
@@ -80,10 +80,10 @@ fun PlayPauseButton(
 @Composable
 fun PlayButtonPreviewLight() {
     MusicXTheme {
-        RoundImageButton(
+        PlayMusicImageButton(
             image = R.drawable.ic_play,
-            iconTint = MaterialTheme.colorScheme.primary,
-            backgroundColor = MaterialTheme.colorScheme.primaryContainer,
+            iconTint = MaterialTheme.colors.primary,
+            backgroundColor = MaterialTheme.colors.primaryVariant,
             contentDescription = "Play Music",
             iconRelativeSize = 0.4f,
             modifier = Modifier.size(72.dp),
@@ -96,10 +96,10 @@ fun PlayButtonPreviewLight() {
 @Composable
 fun PlayButtonPreviewDark() {
     MusicXTheme {
-        RoundImageButton(
+        PlayMusicImageButton(
             image = R.drawable.ic_play,
-            iconTint = MaterialTheme.colorScheme.primary,
-            backgroundColor = MaterialTheme.colorScheme.primaryContainer,
+            iconTint = MaterialTheme.colors.primary,
+            backgroundColor = MaterialTheme.colors.primaryVariant,
             contentDescription = "Play Music",
             iconRelativeSize = 0.4f,
             modifier = Modifier.size(72.dp),
