@@ -27,7 +27,6 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.constraintlayout.widget.Placeholder
 import dev.vaibhav.musicx.R
 import dev.vaibhav.musicx.ui.theme.MusicXTheme
 import dev.vaibhav.musicx.ui.utils.SEARCH_BAR_CLOSE_TAG

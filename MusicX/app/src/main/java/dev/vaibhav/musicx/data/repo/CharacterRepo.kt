@@ -1,7 +1,7 @@
 package dev.vaibhav.musicx.data.repo
 
-import com.example.character.data.api.model.Character
 import dev.vaibhav.musicx.data.ApiCaller
+import dev.vaibhav.musicx.data.models.Character
 import dev.vaibhav.musicx.data.models.Movie
 import javax.inject.Inject
 

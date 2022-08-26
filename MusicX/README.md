@@ -29,7 +29,7 @@
             imageUrl = "https://i.scdn.co/image/ab67616d00004851643e6ecebab400d52574e4b2",
             musicUrl = "", // add the url here
             duration = 363000L
-        ),
+        )
 ```
 
 ## About

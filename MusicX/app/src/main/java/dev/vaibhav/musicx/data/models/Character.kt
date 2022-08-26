@@ -1,4 +1,4 @@
-package com.example.character.data.api.model
+package dev.vaibhav.musicx.data.models
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass

@@ -1,6 +1,6 @@
 package dev.vaibhav.musicx.data
 
-import com.example.character.data.api.model.Character
+import dev.vaibhav.musicx.data.models.Character
 import dev.vaibhav.musicx.data.models.Movie
 import retrofit2.http.GET
 

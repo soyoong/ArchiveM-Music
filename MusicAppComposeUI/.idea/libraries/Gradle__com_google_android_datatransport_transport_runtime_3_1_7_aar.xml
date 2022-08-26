@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.datatransport:transport-runtime:3.1.7@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/71862f5996aca99f53f58833f591b390/transformed/transport-runtime-3.1.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dce447d96c8eae40f502f271c14eb6e4/transformed/transport-runtime-3.1.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c6f9ac3cf15bdf54f76a433a88b63ec1/transformed/transport-runtime-3.1.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dce447d96c8eae40f502f271c14eb6e4/transformed/transport-runtime-3.1.7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/dce447d96c8eae40f502f271c14eb6e4/transformed/transport-runtime-3.1.7/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/3.1.7/8078d5275292a56ae6b9a012cf9cd77bd1e5228/transport-runtime-3.1.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

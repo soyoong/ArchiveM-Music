@@ -18,13 +18,13 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MusicX.NoActionBar"
+        android:theme="@style/Theme.MusicCompose"
         android:usesCleartextTraffic="true">
         <activity
             android:name=".ui.screens.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MusicX.NoActionBar">
+            android:theme="@style/Theme.MusicCompose">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,13 +32,6 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".exoplayer.MusicService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.media.browse.MediaBrowserService" />
-            </intent-filter>
-        </service>
     </application>
 
 </manifest>

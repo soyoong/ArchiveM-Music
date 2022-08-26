@@ -19,7 +19,6 @@ import dev.vaibhav.musicx.data.viewmodel.MainViewModel
 import dev.vaibhav.musicx.ui.screens.authScreen.ForgotPasswordScreen
 import dev.vaibhav.musicx.ui.screens.authScreen.LoginScreen
 import dev.vaibhav.musicx.ui.screens.authScreen.SignUpScreen
-import dev.vaibhav.musicx.ui.screens.homeScreen2.HomeScreen3
 import dev.vaibhav.musicx.ui.screens.navigations.Screens
 import dev.vaibhav.musicx.ui.theme.MusicXTheme
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -39,35 +38,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MusicXTheme {
-                Surface(color = MaterialTheme.colors.background) {
-                    RootNavigation(mainViewModel)
-                }
+                MainScreen()
             }
         }
-    }
-}
-
-@OptIn(ExperimentalComposeUiApi::class)
-@Composable
-fun RootNavigation(mainViewModel: MainViewModel) {
-    val navController = rememberNavController()
-
-    NavHost(navController = navController, startDestination = Screens.Login.route) {
-        composable(Screens.Login.route) {
-            LoginScreen(navController)
-        }
-
-        composable(Screens.ForgotPassword.route) {
-            ForgotPasswordScreen(navController)
-        }
-
-        composable(Screens.SignUp.route) {
-            SignUpScreen(navController)
-        }
-
-        composable(Screens.MainScreen.route) {
-            BottomNavigationController(mainViewModel, navController)
-        }
-
     }
 }
