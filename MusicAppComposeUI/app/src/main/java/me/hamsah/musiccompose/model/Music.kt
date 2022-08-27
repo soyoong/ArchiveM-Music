@@ -13,7 +13,7 @@ data class Music(
     @Json(name = "created_at")
     val createdAt: String,
     @Json(name = "deleted_at")
-    val deletedAt: Any,
+    val deletedAt: String,
     @Json(name = "description")
     val description: String,
     @Json(name = "id")
@@ -23,13 +23,13 @@ data class Music(
     @Json(name = "name")
     val name: String,
     @Json(name = "total_songs")
-    val totalSongs: Any,
+    val totalSongs: String,
     @Json(name = "total_views")
-    val totalViews: Any,
+    val totalViews: String,
     @Json(name = "updated_at")
     val updatedAt: String,
     @Json(name = "image_url")
-    val image_url: Info_Image,
+    val image_url: InfoImage,
     @Json(name = "user")
     val user: User
 )

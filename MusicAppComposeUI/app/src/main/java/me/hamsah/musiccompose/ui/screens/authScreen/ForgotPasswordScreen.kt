@@ -1,4 +1,4 @@
-package dev.vaibhav.musicx.ui.screens.authScreen
+package me.hamsah.musiccompose.ui.screens.authScreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -16,18 +16,17 @@ import androidx.compose.ui.text.intl.Locale
 import androidx.compose.ui.text.toUpperCase
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import dev.vaibhav.musicx.R
-import dev.vaibhav.musicx.ui.screens.authScreen.components.AuthButton
-import dev.vaibhav.musicx.ui.components.AuthTextFiled
-import dev.vaibhav.musicx.ui.components.BackButton
-import dev.vaibhav.musicx.utils.Define
+import me.hamsah.musiccompose.R
+import me.hamsah.musiccompose.ui.components.BackButton
+import me.hamsah.musiccompose.ui.navigations.MainDestinations.LOGIN_ROOT
+import me.hamsah.musiccompose.ui.screens.authScreen.components.AuthTextFiled
+import me.hamsah.musiccompose.ui.screens.authScreen.components.LoginButton
+import me.hamsah.musiccompose.utils.enums.TextFieldType
 
-@ExperimentalComposeUiApi
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
-fun SignUpScreen(navHostController: NavHostController) {
-    var userName by remember { mutableStateOf("") }
+fun ForgotPasswordScreen(navHostController: NavHostController) {
     var email by remember { mutableStateOf("") }
-    var password by remember { mutableStateOf("") }
 
     Box(
         modifier = Modifier
@@ -50,7 +49,7 @@ fun SignUpScreen(navHostController: NavHostController) {
                     })
                     Spacer(modifier = Modifier.height(20.dp))
                     Text(
-                        text = "Sign up".toUpperCase(Locale.current),
+                        text = "Reset password".toUpperCase(Locale.current),
                         color = Color.White,
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier
@@ -69,34 +68,12 @@ fun SignUpScreen(navHostController: NavHostController) {
             ) {
 
                 AuthTextFiled(
-                    text = userName,
-                    type = Define.TextFieldType.Username,
-                    placeholder = "Username",
-                    painter = painterResource(id = R.drawable.ic_user),
-                    modifier = Modifier,
-                    onValueChange = { email = it }
-                )
-
-                Spacer(modifier = Modifier.height(20.dp))
-
-                AuthTextFiled(
                     text = email,
-                    type = Define.TextFieldType.Email,
+                    type = TextFieldType.email,
                     placeholder = "Email",
                     painter = painterResource(id = R.drawable.ic_email),
                     modifier = Modifier,
                     onValueChange = { email = it }
-                )
-
-                Spacer(modifier = Modifier.height(20.dp))
-
-                AuthTextFiled(
-                    text = password,
-                    type = Define.TextFieldType.Password,
-                    placeholder = "Password",
-                    painter = painterResource(id = R.drawable.ic_lock),
-                    modifier = Modifier,
-                    onValueChange = { password = it }
                 )
 
                 Spacer(modifier = Modifier.height(40.dp))
@@ -106,8 +83,9 @@ fun SignUpScreen(navHostController: NavHostController) {
                         .fillMaxWidth(),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    AuthButton(label = "Sign up", onClicked = {
+                    LoginButton(label = "Send", onClicked = {
                         // Todo
+                        navHostController.navigate(LOGIN_ROOT)
                     })
                 }
 

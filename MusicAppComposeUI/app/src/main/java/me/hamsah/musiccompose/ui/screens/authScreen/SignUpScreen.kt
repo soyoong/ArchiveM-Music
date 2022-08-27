@@ -1,7 +1,6 @@
 package dev.vaibhav.musicx.ui.screens.authScreen
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
@@ -12,24 +11,22 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.intl.Locale
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.toUpperCase
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import dev.vaibhav.musicx.R
-import dev.vaibhav.musicx.ui.screens.authScreen.components.AuthButton
+import dev.vaibhav.musicx.ui.components.AuthButton
 import dev.vaibhav.musicx.ui.components.AuthTextFiled
-import dev.vaibhav.musicx.ui.screens.navigations.Screens
+import dev.vaibhav.musicx.ui.components.BackButton
 import dev.vaibhav.musicx.utils.Define
 
 @ExperimentalComposeUiApi
 @Composable
-fun LoginScreen(navHostController: NavHostController) {
+fun SignUpScreen(navHostController: NavHostController) {
+    var userName by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
 
@@ -47,21 +44,41 @@ fun LoginScreen(navHostController: NavHostController) {
         Scaffold(
             backgroundColor = Color.Transparent,   // Make the background transparent
             topBar = {
-                Text(
-                    text = "Sign in".toUpperCase(Locale.current),
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier
-                        .padding(vertical = 60.dp)
-                )
+                Column(modifier = Modifier.padding(vertical = 60.dp)) {
+                    BackButton(onClicked = {
+                        // Todo
+                        navHostController.popBackStack()
+                    })
+                    Spacer(modifier = Modifier.height(20.dp))
+                    Text(
+                        text = "Sign up".toUpperCase(Locale.current),
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier
+                            .padding(horizontal = 20.dp)
+                    )
+                }
             },
             modifier = Modifier
-                .padding(horizontal = 20.dp)
 
         ) {
             // Scaffold content
 
-            Column {
+            Column(
+                modifier = Modifier
+                    .padding(horizontal = 20.dp)
+            ) {
+
+                AuthTextFiled(
+                    text = userName,
+                    type = Define.TextFieldType.Username,
+                    placeholder = "Username",
+                    painter = painterResource(id = R.drawable.ic_user),
+                    modifier = Modifier,
+                    onValueChange = { email = it }
+                )
+
+                Spacer(modifier = Modifier.height(20.dp))
 
                 AuthTextFiled(
                     text = email,
@@ -83,25 +100,6 @@ fun LoginScreen(navHostController: NavHostController) {
                     onValueChange = { password = it }
                 )
 
-                Spacer(modifier = Modifier.height(20.dp))
-
-
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth(),
-                    horizontalArrangement = Arrangement.End
-                ) {
-                    Text(
-                        text = "Forgot password?",
-                        color = Color.White,
-                        modifier = Modifier
-                            .clickable {
-                                /* todo */
-                            },
-                        textAlign = TextAlign.End
-                    )
-                }
-
                 Spacer(modifier = Modifier.height(40.dp))
 
                 Column(
@@ -109,24 +107,9 @@ fun LoginScreen(navHostController: NavHostController) {
                         .fillMaxWidth(),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    AuthButton(label = "Sign in", onClicked = {
+                    AuthButton(label = "Sign up", onClicked = {
                         // Todo
-                        navHostController.navigate(Screens.MainScreen.route)
                     })
-
-                    Spacer(modifier = Modifier.height(20.dp))
-
-                    Text(
-                        text = "Sing up".uppercase(),
-                        fontFamily = FontFamily(Font(R.font.roboto_bold)),
-                        fontSize = 16.sp,
-                        color = Color.White,
-                        modifier = Modifier
-                            .clickable {
-                                // Todo
-                                navHostController.navigate(Screens.SignUp.route)
-                            }
-                    )
                 }
 
             }

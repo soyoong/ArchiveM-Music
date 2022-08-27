@@ -14,11 +14,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.intl.Locale
 import androidx.compose.ui.text.toUpperCase
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import dev.vaibhav.musicx.R
-import dev.vaibhav.musicx.ui.components.AuthButton
+import dev.vaibhav.musicx.ui.screens.authScreen.components.AuthButton
 import dev.vaibhav.musicx.ui.components.AuthTextFiled
 import dev.vaibhav.musicx.ui.components.BackButton
 import dev.vaibhav.musicx.ui.screens.navigations.Screens

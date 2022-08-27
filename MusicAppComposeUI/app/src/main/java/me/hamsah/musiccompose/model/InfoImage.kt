@@ -5,7 +5,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class Info_Image(
+data class InfoImage(
     @Json(name = "created_at")
     val createdAt: String,
     @Json(name = "deleted_at")

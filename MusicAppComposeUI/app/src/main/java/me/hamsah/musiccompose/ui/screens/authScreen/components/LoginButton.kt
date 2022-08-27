@@ -1,4 +1,4 @@
-package dev.vaibhav.musicx.ui.components
+package me.hamsah.musiccompose.ui.screens.authScreen.components
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.height
@@ -16,10 +16,11 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import dev.vaibhav.musicx.R
+import me.hamsah.musiccompose.R
+import me.hamsah.musiccompose.ui.theme.Pink
 
 @Composable
-fun AuthButton(label: String, onClicked: () -> Unit) {
+fun LoginButton(label: String, onClicked: () -> Unit) {
     Button(
         onClick = onClicked,
         // Uses ButtonDefaults.ContentPadding by default
@@ -33,7 +34,7 @@ fun AuthButton(label: String, onClicked: () -> Unit) {
         modifier = Modifier
             .width(295.dp)
             .height(58.dp),
-        colors = ButtonDefaults.buttonColors(backgroundColor = colorResource(id = R.color.pink))
+        colors = ButtonDefaults.buttonColors(backgroundColor = Pink)
     ) {
         Text(
             label.uppercase(),
@@ -47,5 +48,7 @@ fun AuthButton(label: String, onClicked: () -> Unit) {
 @Preview
 @Composable
 private fun AuthButtonPreview() {
-    AuthButton("Sign in", {})
+    LoginButton("Sign in") {
+        // Todo
+    }
 }

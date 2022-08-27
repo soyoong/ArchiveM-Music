@@ -13,6 +13,9 @@ import me.hamsah.musiccompose.ui.screens.MyMusicScreen
 
 object MainDestinations {
 
+    const val RESET_PASSWORD_ROOT = "Reset Password"
+    const val REGISTER_ROOT = "Register"
+    const val LOGIN_ROOT = "Login"
     const val BROWSER_ROOT = "Browser"
     const val ARTISTS_ROOT = "Artists"
     const val HOME_ROOT = "Home"

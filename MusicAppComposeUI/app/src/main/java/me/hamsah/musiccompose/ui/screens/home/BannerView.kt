@@ -34,22 +34,17 @@ import com.google.accompanist.pager.rememberPagerState
 import kotlinx.coroutines.delay
 import me.hamsah.musiccompose.R
 import me.hamsah.musiccompose.model.Banner
+import me.hamsah.musiccompose.ui.components.AsyncImage
+import me.hamsah.musiccompose.ui.theme.DarkBackground
 import me.hamsah.musiccompose.utils.sampleBannerList
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
 fun BannerView() {
-//    val mainViewModel = viewModel(modelClass = MainViewModel::class.java)
-//    val list by mainViewModel.recommendation.collectAsState()
     val pagerState = rememberPagerState()
     val list = sampleBannerList
 
-//    mainViewModel.getRecommendation()
-
-    Surface(
-        modifier = Modifier.fillMaxSize(),
-        color = MaterialTheme.colors.background
-    ) {
+    Surface(modifier = Modifier) {
         SliderView(pagerState, list)
 
         LaunchedEffect(key1 = pagerState.currentPage) {
@@ -82,30 +77,26 @@ private fun SliderView(state: PagerState, list: List<Banner>) {
             contentAlignment = Alignment.BottomCenter,
             modifier = Modifier
                 .height(200.dp)
+                .background(color = DarkBackground)
         ) {
 
-            val painter = rememberAsyncImagePainter(
-                ImageRequest.Builder(LocalContext.current).data(data = imageUrl.value)
-                    .apply(block = fun ImageRequest.Builder.() {
-                        placeholder(R.drawable.ahllam)
-                        scale(Scale.FILL)
-                    }).build()
-            )
-            Image(
-                painter = painter,
-                contentDescription = "",
+            AsyncImage(
+                imageUrl = imageUrl.value,
                 modifier = Modifier
                     .padding(8.dp)
                     .clip(RoundedCornerShape(10.dp))
-                    .fillMaxSize(),
-                contentScale = ContentScale.Crop
+                    .fillMaxSize()
             )
 
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(8.dp)
-                    .background(Color.LightGray.copy(alpha = 0.60F))
+                    .background(
+                        color = Color.LightGray.copy(alpha = 0.60F),
+                        shape = RoundedCornerShape(bottomStart = 10.dp, bottomEnd = 10.dp)
+                    )
+                    .clip(RoundedCornerShape(10.dp))
                     .padding(8.dp)
             ) {
                 Text(

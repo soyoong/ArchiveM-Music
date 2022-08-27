@@ -5,4 +5,6 @@
     <string name="home_screen_route">Home</string>
     <string name="genres_bag_screen_route">Genres</string>
     <string name="my_music_screen_route">MyMusic</string>
+
+    <string name="search_here">Search here</string>x
 </resources>

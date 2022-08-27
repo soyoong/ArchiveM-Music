@@ -1,6 +1,9 @@
 package me.hamsah.musiccompose.utils
 
+import com.squareup.moshi.Json
 import me.hamsah.musiccompose.model.Banner
+import me.hamsah.musiccompose.model.InfoImage
+import me.hamsah.musiccompose.model.Music
 
 val sampleBannerList = listOf<Banner>(
     Banner(

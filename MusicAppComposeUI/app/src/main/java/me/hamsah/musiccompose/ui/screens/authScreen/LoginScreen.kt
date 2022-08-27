@@ -1,4 +1,4 @@
-package dev.vaibhav.musicx.ui.screens.authScreen
+package me.hamsah.musiccompose.ui.screens.authScreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -21,11 +21,12 @@ import androidx.compose.ui.text.toUpperCase
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import dev.vaibhav.musicx.R
-import dev.vaibhav.musicx.ui.screens.authScreen.components.AuthButton
-import dev.vaibhav.musicx.ui.components.AuthTextFiled
-import dev.vaibhav.musicx.ui.screens.navigations.Screens
-import dev.vaibhav.musicx.utils.Define
+import me.hamsah.musiccompose.R
+import me.hamsah.musiccompose.ui.navigations.MainDestinations.HOME_ROOT
+import me.hamsah.musiccompose.ui.navigations.MainDestinations.REGISTER_ROOT
+import me.hamsah.musiccompose.ui.screens.authScreen.components.AuthTextFiled
+import me.hamsah.musiccompose.ui.screens.authScreen.components.LoginButton
+import me.hamsah.musiccompose.utils.enums.TextFieldType
 
 @ExperimentalComposeUiApi
 @Composable
@@ -65,7 +66,7 @@ fun LoginScreen(navHostController: NavHostController) {
 
                 AuthTextFiled(
                     text = email,
-                    type = Define.TextFieldType.Email,
+                    type = TextFieldType.email,
                     placeholder = "Email",
                     painter = painterResource(id = R.drawable.ic_email),
                     modifier = Modifier,
@@ -76,7 +77,7 @@ fun LoginScreen(navHostController: NavHostController) {
 
                 AuthTextFiled(
                     text = password,
-                    type = Define.TextFieldType.Password,
+                    type = TextFieldType.password,
                     placeholder = "Password",
                     painter = painterResource(id = R.drawable.ic_lock),
                     modifier = Modifier,
@@ -84,7 +85,6 @@ fun LoginScreen(navHostController: NavHostController) {
                 )
 
                 Spacer(modifier = Modifier.height(20.dp))
-
 
                 Row(
                     modifier = Modifier
@@ -109,10 +109,13 @@ fun LoginScreen(navHostController: NavHostController) {
                         .fillMaxWidth(),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    AuthButton(label = "Sign in", onClicked = {
-                        // Todo
-                        navHostController.navigate(Screens.MainScreen.route)
-                    })
+                    LoginButton(
+                        label = "Sign in",
+                        onClicked = {
+                            // Todo
+                            navHostController.navigate(HOME_ROOT)
+                        }
+                    )
 
                     Spacer(modifier = Modifier.height(20.dp))
 
@@ -124,13 +127,11 @@ fun LoginScreen(navHostController: NavHostController) {
                         modifier = Modifier
                             .clickable {
                                 // Todo
-                                navHostController.navigate(Screens.SignUp.route)
+                                navHostController.navigate(REGISTER_ROOT)
                             }
                     )
                 }
-
             }
         }
-
     }
 }

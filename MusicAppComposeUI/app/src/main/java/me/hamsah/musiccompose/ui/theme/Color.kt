@@ -2,7 +2,7 @@ package me.hamsah.musiccompose.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val DarkBackground = Color(0xFF13141E)
+val DarkBackground = Color(0xFF0E0B1F)
 val DarkBackgroundOpacity = Color(0x7F13141E)
 val Silver = Color(0xFFF9F9FE)
 val LightPurple = Color(0xFF4E3D6F)
@@ -23,6 +23,7 @@ val BlueViolet3 = Color(0xff8f98fd)
 val BGS = Color(0xFFFC5C7D)
 val BGE = Color(0xFF6A82FB)
 
+val Pink = Color(0xFFEF01A0)
 
 val albumItemDarkColor =Color(0xFF262736)
 val albumItemMediumColor =Color(0xFF353745)
